@@ -27,8 +27,15 @@ Block Diagram<br><br>
   </tr>
   <tr>
     <td>JS core</td>
-    <td></td>
+    <td> derived from Harri Porten's project</td>
+    <td>Webkit project,Safari</td>
   </tr>
+   <tr>
+    <td>Chakra core</td>
+    <td>Microsoft</td>
+    <td>Microsoft Edge</td>
+  </tr>
+
 
 
 </table>
@@ -98,18 +105,125 @@ example :- const pi=3.14
 </ol>
 <br>
 </ol>
-Disadvantage of using a var keyword is that<br>
+Disadvantage of using a var keyword is that:<br>
+<li>No error is thrown if you declare the same variable twice using var (conversely, both let and const will throw an error if a variable is declared twice)
+<li>Variables declared with var are not block scoped (although they are function scoped), while with let and const they are. <br><br><br>
 
-
-<font color="cyan">**4) What are the different types of scopes in Javascript? Explain with the examples each in detail.**</font>
-
+<font color="cyan">**4)  What are the different types of Scopes in Javascript? Explain with examples each in detail.**</font>
+<br>
 **=>**
-There are three kinds of scopes in Javascript,they are as follows:
+There are various types of scopes in JavaScript.
 <ol>
-<li>Global Scope  :<br>
+<li>Global Scope<br>
+<ol>All variables are by default Global in scope. This means it is accessible anywhere in the JavaScript code.<br></ol>
+<br>Examples:<br><ol>
+let a=3;<br>
+function FunctionalScope()<br>
+{
+  <br>console.log(a);// Local Scope<br>
+}<br>
+console.log(a); //Global Scope<br>
+OUTPUT:<br>
+3<br>
+3</ol>
+</li><br>
+<li>
+Block Scope<br>
+<ol>Certain variables which are defined in block cannot be accessed outside block.<br></ol>
+<br>Examples:<br><ol>
+{<br>
+var a=1;<br>
+let b=2;<br>
+}<br>
+console.log(a);<br>
+console.log(b);<br>
+OUTPUT<br>
+1 //unexpected behaviour of var.Hence not recommended.<br> 
+error<br></ol>
+</li><br>
+<li>
+Funtional Scope<br>
+<ol>Certain variables are restricted to function body where they are declared.<br></ol>
+<br>Examples:<br><ol>
+{<br>
+var a=1;<br>
+let b=2;<br>}<br>
+console.log(a);<br>
+function help()<br>{<br>
+let a=3;<br>
+let b=4;<br>}<br>
+console.log(a);<br>
+OUTPUT:<br>
+1<br>
+1 //accesses global scope a=1</ol>
+</li>
+</ol>
+
+
+<font color="cyan">**5.  What are the different types of function? Explain each in detail with example. Explain the working of this in each type.**</font>
+<br>**=>**
+<br>Function Types:<br>
 <ol>
+<li>Anonymous function<br><br>
+<ol>These functions can be involked using the variable name.They do not need function names.This type of function refers to the object it is called on behalf of.<br></ol>
+<br><ol>Syntax:</ol><ol><ol>let a=function(var1,var2,...)<br>
+{<br><ol>body</ol>}<br></ol></ol><br>
+<ol>Example:<br><br>
+<ol>let a=function()<br>
+{<br><ol>
+let x=1;<br>
+let y=2;<br>
+console.log(x);<br></ol>
+}<br></ol><br>
+In this case the 'this' in this case would refer to the object 'a'.We can access element x&y using 'this.x' and 'this.y'.</ol>
+
+<br><br>
+<li>
+Normal function<br><br>
+<ol>These functions use 'function' keyword and also need func_name at declaration<br>
+<br>Syntax:<br><br>
+<ol>function func_name(var1,var2,...)<br>
+{<br><ol>body<br></ol>}</ol>
+<br>Example:<br><br>
+function help()<br>
+{<br><ol>
+let x=1;<br>
+let y=2;<br>
+console.log(x);</ol><br>}<br><br>
+The this keyword does not refer to the currently executing function, so must refer to Function objects by name, even within the function body<br><br>
+<br></ol>
+
+<li>
+Declaration in class/objects<br><ol><br>
+These are declared in class or objects. They don't need function keyword for declaration and have to be accessed using class/object instance.<br><br>Syntax:<ol>
+<br>name(var1,var2,...)<br>
+{<br><ol>body</ol>}</ol>
+<br>Example:<br>
+<br>hey()<br>
+{<br><ol>let x=1;<br>
+let y=2;<br>
+console.log(x)</ol>}</ol>
+
+<br>
+<li>
+Arrow Function<br><br>
+<ol>An arrow function is a type of anonymous function. Takes 'this' from parent class, hence must not be used in functions with defined values.<br><br>Syntax:<br>
+<br>let name:()=> //Object function<br>{<br>body<br>}
+<br>let name=()=> //Class function<br>{<br>body<br>}
+<br>Example:
+<br>let a={<br>
+fname:'Anjana',<br>
+lname:'Neelayath',<br>
+getName:()=>{<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp return `${this.fname}` //Global Scope<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp return `${a.lname}`<br>}
+<br>}<br>
+OUTPUT:<br>
+undefined,Neelayath
 
 </ol>
+
+
 
 
 
