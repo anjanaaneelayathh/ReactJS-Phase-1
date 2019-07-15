@@ -107,6 +107,7 @@ Disadvantage of using a var keyword is that<br>
 There are three kinds of scopes in Javascript,they are as follows:
 <ol>
 <li>Global Scope<br>
+The.
 
 </ol>
 
