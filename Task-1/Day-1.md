@@ -208,16 +208,16 @@ console.log(x)</ol>}</ol>
 <li>
 Arrow Function<br><br>
 <ol>An arrow function is a type of anonymous function. Takes 'this' from parent class, hence must not be used in functions with defined values.<br><br>Syntax:<br>
-<br>let name:()=> //Object function<br>{<br>body<br>}
-<br>let name=()=> //Class function<br>{<br>body<br>}
-<br>Example:
+<br><ol>let name:()=> //Object function<br>{<br><ol>body</ol>}
+<br>let name=()=> //Class function<br>{<br><ol>body</ol>}</ol>
+<br>Example:<br>
 <br>let a={<br>
-fname:'Anjana',<br>
+<ol>fname:'Anjana',<br>
 lname:'Neelayath',<br>
 getName:()=>{<br>
-&nbsp&nbsp&nbsp&nbsp&nbsp return `${this.fname}` //Global Scope<br>
-&nbsp&nbsp&nbsp&nbsp&nbsp return `${a.lname}`<br>}
-<br>}<br>
+<ol>return `${this.fname}` //Global Scope<br>
+return `${a.lname}`</ol><ol>}</ol>
+<br>}</ol><br>
 OUTPUT:<br>
 undefined,Neelayath
 
