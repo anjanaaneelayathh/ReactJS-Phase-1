@@ -56,11 +56,11 @@ class DrStrange{
 
 
 let a =new DrStrange()          
-console.log(a.getfullname());
-console.log(a.getBio());
-console.log(a.getAbout());
-console.log(a.getCharachter());
-console.log(a.getExperience());
+console.log("fullname:"+a.getfullname());
+console.log("bio"+a.getBio());
+console.log("about"+a.getAbout());
+console.log("charachter"+a.getCharachter());
+console.log("Exp"+a.getExperience());
 
 
 
