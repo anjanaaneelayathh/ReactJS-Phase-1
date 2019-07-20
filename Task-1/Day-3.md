@@ -21,7 +21,7 @@ result — an arbitrary value, initially undefined.</ol>
 
 a=new Promise((resolve,reject)=>{              //two functions as parameters<br>
      resolve(data);    // in case data fetches successfully<br>
-     reject(error);      //in case data is not fetched<br>
+     reject(error);      //in case data is not fetched,any one is executed not both.<br>
 }<br>
 
 
@@ -35,6 +35,8 @@ a.then((value)=>{           //either then or catch will be called<br>
     console.log(value);<br>
 
 });<br>
+
+//
 
 
 
