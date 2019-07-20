@@ -25,9 +25,5 @@ third<br>
 second<br>//here the setTimeout() is an observer function thus even at 0ms it enters an event loop checks for the delay and the  node fires event on the task completion leading to function execution ,meanwhile the third statement gets executed and thus gets displayed before.
 </ol>
 
-<font color="cyan">**7)What is Promise?How do you create a Promise?Explain with an example.**</font><br>
-**=>**<br>
-<li>Promises provide a simpler alternative for executing, composing, and managing asynchronous operations when compared to traditional callback-based approaches. <br>
-<li>They also allow you to handle asynchronous errors using approaches that are similar to synchronous try/catch .
 
 
