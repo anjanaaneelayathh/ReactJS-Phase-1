@@ -14,12 +14,27 @@
 
 <ol>state — initially “pending”, then changes to either “fulfilled” or “rejected”,<br>
 result — an arbitrary value, initially undefined.</ol>
-<li>A Promise object serves as a link between the executor (the “producing code” or “singer”) and the consuming functions (the “fans”), which will receive the result or error. Consuming functions can be registered (subscribed) using methods .then, .catch and .finally.
+<li>A Promise object serves as a link between the executor (the “producing code” ) and the consuming functions , which will receive the result or error. Consuming functions can be registered (subscribed) using methods .then, .catch and .finally.
 
-<li>A Promise is in one of these states:<br>
-<ol>pending: initial state, neither fulfilled nor rejected.<br>
-fulfilled: meaning that the operation completed successfully.<br>
-rejected: meaning that the operation failed.</ol><br>
+<li>EXAMPLE:
+<ol>
+
+a=new Promise((resolve,reject)=>{              //two functions as parameters<br>
+     resolve(data);    // in case data fetches successfully<br>
+     reject(error);      //in case data is not fetched<br>
+}<br>
+
+
+let a=new Promise((resolve,reject)=>{<br>
+        reject("hi");<br>
+    });<br>
+a.then((value)=>{           //either then or catch will be called<br>
+    console.log(value);<br>
+})<br>
+.catch((value)=>{<br>
+    console.log(value);<br>
+
+});<br>
 
 
 
