@@ -28,7 +28,8 @@ a=new Promise((resolve,reject)=>{              //two functions as parameters<br>
 let a=new Promise((resolve,reject)=>{<br>
         reject("hi");<br>
     });<br>
-a.then((value)=>{           //either then or catch will be called<br>
+a.then((value)=>{           //either then or catch will be called,then for successes and for failures<br>
+                           
     console.log(value);<br>
 })<br>
 .catch((value)=>{<br>
