@@ -24,7 +24,7 @@ console.log(b);
 
 
 
-//console.log(a.slice(7,11));//elements from 7 to 10 index displayed
+console.log(a.slice(7,11));//elements from 7 to 10 index displayed
 
 
 let c=b.filter((value)=>{
