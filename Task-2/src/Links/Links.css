@@ -1,0 +1,26 @@
+.tab{
+    color:white;
+    background-color:rgb(29, 142, 131); 
+    text-overflow: hidden;
+    text-align: right;
+    flex: 50px;
+}
+.button {
+    background-color: rgb(19, 136, 124);;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 5px;
+    cursor: pointer;
+  }
+  .links{
+      padding-right: 100px;
+  }
+  .font{
+      font-size: 25px;
+  }
+  
