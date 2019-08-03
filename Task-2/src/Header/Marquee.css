@@ -1,0 +1,13 @@
+.tab{
+    color:white;
+    background-color:rgb(29, 142, 131); 
+    text-overflow: hidden;
+    padding-top:100px;
+    
+}
+.black{
+    background-color: black;
+    color: white;
+    text-overflow: clip;
+}
+
