@@ -48,8 +48,7 @@ class SideDrawer extends Component{
         <NavLink style={{textDecoration:'none'}}to="/course"><i style={{ paddingRight:'50px'}}class="fa fa-book fa-2x"></i>Courses   </NavLink>    
         <NavLink style={{textDecoration:'none'}}to="/examcell"><i style={{ paddingRight:'40px'}}class="fa fa-graduation-cap fa-2x"></i>Exam Cell  </NavLink>     
         <NavLink style={{textDecoration:'none'}}to="/office"><i style={{ paddingRight:'53px'}}class="fa fa-building-o fa-2x"></i>Office        </NavLink>
-        <NavLink style={{textDecoration:'none'}}to="/railway"><i style={{ paddingRight:'53px'}}class="fa fa-train fa-2x"></i>Railway Concession  </NavLink>    
-        {/* <NavLink style={{textDecoration:'none'}}to="/poll"><i class="fa fa-bar-chart fa-2x"></i>Poll     </NavLink> */}
+        <NavLink style={{textDecoration:'none'}}to="/railway"><i style={{ paddingRight:'53px'}}class="fa fa-train fa-2x"></i>Railway Concession  </NavLink>   
         <NavLink style={{textDecoration:'none'}}to="/logout"><i style={{ paddingRight:'50px'}}class="fa fa-sign-out fa-2x"></i>Logout</NavLink>
         </div>
     );}
