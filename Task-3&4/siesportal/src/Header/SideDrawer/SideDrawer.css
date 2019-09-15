@@ -24,10 +24,6 @@ i{
     padding-left: 15px;
 
 }
-.sidedrawer{
-    background-color: #fff;
-    z-index: 99999;
-}
 pre {
     display: inline;
     margin: 0;
@@ -58,7 +54,9 @@ a:hover{
 a:visited{
     color: rgba(10, 10, 10, 0.678);
 }
-.sidepanel{
+.sidedrawer{
+        background-color: #fff;
+        z-index: 99999;
         position: fixed;
         top: 0;
         left: 0;
