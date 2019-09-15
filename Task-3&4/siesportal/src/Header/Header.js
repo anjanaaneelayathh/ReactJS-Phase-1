@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import './Header.css';
-import SidePanel from './SideDrawer/SideDrawer';
+import SideDrawer from './SideDrawer/SideDrawer';
 
 class Header extends Component  {
 
