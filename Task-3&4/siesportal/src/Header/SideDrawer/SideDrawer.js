@@ -9,23 +9,22 @@ class SideDrawer extends Component{
     constructor(props) {
         super(props);
         this.state = {
-        //   showMenu: false,
           showProfile:false,
         };
-        this.closeMenu = this.closeMenu.bind(this);
+        this.closeNav = this.closeNav.bind(this);
         this.Profclick = this.Profclick.bind(this);
       }
 
-    closeMenu() {
-        this.setState({ showMenu: false }, () => {
-          document.removeEventListener('click', this.closeMenu);
+    closeNav() {
+        this.setState({ showNav: false }, () => {
+          document.removeEventListener('click', this.closeNav);
           console.log("Profclick")
 
         });
     }
     Profclick(){
         this.setState({ showProfile: true}, () => {
-            document.removeEventListener('click', this.closeMenu);
+            document.removeEventListener('click', this.closeNav);
             console.log("Profile",this.state.showProfile)
           });
         
