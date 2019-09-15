@@ -10,18 +10,9 @@ class Header extends Component  {
           showNav: false,
         };
         this.closeNav = this.closeNav.bind(this);
-        this._onButtonClick = this._onButtonClick.bind(this);
+        this.onButtonClick = this.onButtonClick.bind(this);
       }
-    
-      _onButtonClick() {
-        this.setState({
-          showNav: true,
-        }, () => {
-          document.addEventListener('click', this.closeNav);
-          console.log('OnButtonClick')
-        });
-      }
-      closeMenu() {
+    closeNav() {
         this.setState({ showNav: false }, () => {
           document.removeEventListener('click', this.closeNav);
           console.log('closeNav')
@@ -29,11 +20,20 @@ class Header extends Component  {
         });
       }
     
+      onButtonClick() {
+        this.setState({
+          showNav: true,
+        }, () => {
+          document.addEventListener('click', this.closeNav);
+          console.log('OnButtonClick')
+        });
+      }
+      
       render() {
         return (
               <div class='headd'>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-                <i style={{paddingLeft:'20px'}} class="fa fa-bars fa-lg" onClick={this._onButtonClick}></i>
+                <i style={{paddingLeft:'20px'}} class="fa fa-bars fa-lg" onClick={this.onButtonClick}></i>
                 <span class = 'textheadd'>SIESGST Portal</span>
                 {this.state.showMenu ? <div ><SideDrawer/></div> : null }
               </div>
