@@ -49,8 +49,8 @@ const Login=()=>{
                 <br></br>
 
                 <div style={{marginLeft:'50px',display:'flex',flexDirection:'row',justifyContent:'space-between'}}>
-                <NavLink style={{textDecoration:'none',backgroundColor:'white'}}to="/signin"><Button variant="primary">Login</Button></NavLink>
-                <NavLink style={{textDecoration:'none',backgroundColor:'white'}}to="/register"> <Button variant="primary">Register</Button></NavLink>
+                <NavLink style={{textDecoration:'none',backgroundColor:'white'}}to="/signin"><Button variant="dark">Login</Button></NavLink>
+                <NavLink style={{textDecoration:'none',backgroundColor:'white'}}to="/register"> <Button variant="dark">Register</Button></NavLink>
                 </div>
 
 
