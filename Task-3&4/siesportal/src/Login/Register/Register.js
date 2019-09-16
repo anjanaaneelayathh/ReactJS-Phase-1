@@ -106,9 +106,8 @@ const Register=()=>{
                   <label for="interests">Interests</label>
                 </div>
                 <div align="center">
-                  {/* <NavLink style={{textDecoration:'none',backgroundColor:'white'}}to="/"> */}
-                    <Button type="submit" variant="primary">Register</Button>
-                    {/* </NavLink> */}
+                    <Button type="submit" variant="dark">Register</Button>
+                    
                   
                 </div>
               </form>
